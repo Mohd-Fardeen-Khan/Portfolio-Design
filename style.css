@@ -34,6 +34,36 @@ a:hover {
   color: #F59E0B;
 }
 
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #1E293B;
+  margin-bottom: 20px;
+}
+
+.navbar h2{
+  color: #007BFF;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar ul li a {
+  color: #00C6FF;
+  font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+  color: #CBD5E1;
+  transition: 0.3s;
+}
 /* 🔝 Header */
 .header {
   display: flex;
@@ -79,6 +109,22 @@ a:hover {
   transition: 0.3s;
 }
 
+.button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #00C6FF;
+}
+
 /* 📄 Main Content */
 .main-container {
   margin-top: 30px;
@@ -86,6 +132,7 @@ a:hover {
 
 /* 📌 Section Headings */
 .about h2,
+.skills h2,
 .goals h2 {
   color: #00C6FF;
   font-size: 1.8rem;
@@ -95,6 +142,7 @@ a:hover {
 /* 📝 Paragraphs */
 .about p,
 .goals ul li,
+.skills ul li,
 .contact a {
   color: #CBD5E1;
   font-size: 1rem;
@@ -106,6 +154,15 @@ a:hover {
 }
 
 .goals ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.skills {
+  margin-top: 20px;
+}
+
+.skills ul {
   list-style-type: square;
   padding-left: 20px;
 }
