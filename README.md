@@ -30,5 +30,5 @@ Currently learning and building projects daily.
 ## 📬 Contact
 
 - Email: fk766698835@gmail.com
-- GitHub: https://github.com/Mohd-Fardeen-Khan
+- GitHub: [Github](https://github.com/Mohd-Fardeen-Khan)
 - LinkedIn: [linkedin](https://www.linkedin.com/in/mohdfardeenkhan)
