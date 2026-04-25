@@ -4,18 +4,28 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* 🌙 DARK MODE (default) */
+  --bg-color: #020617;
+  --text-color: #CBD5E1;
+  --container-bg: #0F172A;
+  --primary: #007BFF;
+  --secondary: #00C6FF;
+  --accent: #F59E0B;
+}
+
 /* 🌌 Background */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #020617;
-  color: #CBD5E1;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
   padding: 20px;
 }
 
 /* 📦 Container */
 .container {
-  background: #0F172A;
+  background: var(--container-bg);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -26,12 +36,12 @@ body {
 /* 🔗 Links */
 a {
   text-decoration: none;
-  color: #00C6FF;
+  color: var(--secondary);
   font-weight: 600;
 }
 
 a:hover {
-  color: #F59E0B;
+  color: var(--accent);
 }
 
 .navbar{
@@ -56,12 +66,12 @@ a:hover {
 }
 
 .navbar ul li a {
-  color: #00C6FF;
+  color: var(--secondary);
   font-size: 1rem;
 }
 
 .navbar ul li a:hover {
-  color: #CBD5E1;
+  color: var(--accent);
   transition: 0.3s;
 }
 /* 🔝 Header */
@@ -79,13 +89,13 @@ a:hover {
 }
 
 .profile-name h1 {
-  color: #007BFF;
+  color: var(--primary);
   font-weight: bold;
   font-size: 2.5rem;
 }
 
 .profile-name p {
-  color: #CBD5E1;
+  color: var(--text-color);
   font-size: 1.1rem;
 }
 
@@ -100,7 +110,7 @@ a:hover {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 3px solid #007BFF;
+  border: 3px solid var(--primary);
   box-shadow: 0 0 15px rgba(0, 198, 255, 0.4);
 }
 
@@ -112,7 +122,7 @@ a:hover {
 .button{
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: var(--primary);
   border: none;
   color: #fff;
   font-size: 1rem;
@@ -122,7 +132,7 @@ a:hover {
 }
 
 .button:hover {
-  background-color: #00C6FF;
+  background-color: var(--secondary);
 }
 
 /* 📄 Main Content */
@@ -134,7 +144,7 @@ a:hover {
 .about h2,
 .skills h2,
 .goals h2 {
-  color: #00C6FF;
+  color: var(--secondary);
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
@@ -144,7 +154,7 @@ a:hover {
 .goals ul li,
 .skills ul li,
 .contact a {
-  color: #CBD5E1;
+  color: var(--text-color);
   font-size: 1rem;
 }
 
@@ -179,7 +189,7 @@ a:hover {
 .footer {
   margin-top: 30px;
   text-align: center;
-  color: #94A3B8;
+  color: var(--text-color);
   font-size: 1rem;
   border-top: 2px solid #1E293B;
   padding-top: 10px;
@@ -220,10 +230,25 @@ a:hover {
 }
 
 
+.toggle_btn {
+  width: 140px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-
-
-
+.light-mode {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --container-bg: linear-gradient(95deg, #dfe5ec, #599692);
+  --primary: #599692;
+  --secondary: #4b8f8a;
+  --accent: #000;
+}
 
 /* can you add the color in this code 
 * {
